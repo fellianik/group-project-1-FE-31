@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+aside {
+  background-color: #405262;
+  width: 285px;
+}
+.container {
+  width: 285px;
+  border: 1px solid black;
+}
+/* .navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+.navbar li {
+  margin-bottom: 1px;
+}
+.navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+} */
+.navbar {
+  justify-content: center;
+  display: grid;
+}
+.navbar button {
+  display: block;
+  color: black;
+  background-color: white;
+  margin-bottom: 22px;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 0.5px solid white;
+}
+.navbar button:hover {
+  cursor: pointer;
+  background-color: #00f2fe;
+  color: black;
+  border: 0.5px solid black;
+}
