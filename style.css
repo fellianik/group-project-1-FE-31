@@ -1,9 +1,9 @@
 *{
     font-family: 'Poppins', sans-serif;
     background: #405262;
-    margin: 0;
 }
 .login{
+    margin: auto;
     height: 100vh;
 }
 .header h1{
@@ -24,11 +24,22 @@
     height: 32px;
     background: #25A4DE;
     border-radius: 5px;
-    color: white;
+    
     border-color: #25A4DE;
+    text-decoration: none;
 }
 .bg-login{
     width: 50%;
     height: 100vh;
+}
+.login-form .sign-in a{
+    text-decoration: none;
+    background: #25A4DE;
+    color: white;
+}
+.login-form .sign-in a:hover{
+    text-decoration: none;
+    width: 55%;
+    height: 37px;
 }
 
