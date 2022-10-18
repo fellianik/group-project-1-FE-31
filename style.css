@@ -2,12 +2,16 @@
     width: auto;
     height: auto;
     margin: auto;
+    background-color: #405262;
+}
+body{
+    background-color: #405262;
 }
 .container{
     width: 100%;
     height: 100%;
     font-family: 'Poppins', sans-serif;
-    margin-top: 65px; 
+    padding: 40px;
 }
 .login{
     width: auto;
@@ -48,9 +52,8 @@
     text-decoration: none;
 }
 .bg-login{
-    width: 50%;
+    width: 100%;
     height: 80vh;
-    position: relative;
     background-size: cover;
 }
 .login-form .sign-in a{
