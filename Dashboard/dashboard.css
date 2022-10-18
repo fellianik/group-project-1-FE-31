@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.global {
+  display: flex;
+}
 aside {
   background-color: #405262;
   width: 285px;
@@ -31,6 +34,11 @@ aside {
   padding: 8px 16px;
   text-decoration: none;
 } */
+.logo {
+  display: grid;
+  justify-content: center;
+  padding: 60px 0px;
+}
 .navbar {
   justify-content: center;
   display: grid;
@@ -52,4 +60,57 @@ aside {
   background-color: #00f2fe;
   color: black;
   border: 0.5px solid black;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.home {
+  display: grid;
+  justify-content: center;
+  padding: 70px 0px;
+}
+.home a {
+  color: black;
+}
+.home a:hover {
+  color: white;
+  text-shadow: 1px 1px 7px black;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(3px) translateZ(1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.nav {
+  display: flex;
+  background-color: #405262;
+  align-items: center;
+  justify-content: end;
+  width: 992px;
+  height: 60px;
+}
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+.profil h5 {
+  color: white;
+}
+.profil img {
+  margin-left: 15px;
+  border-radius: 40px;
 }
