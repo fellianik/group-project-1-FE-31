@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 /* parent layout */
-.global {
-  display: flex;
-}
 /* layout */
 
 /* start sidebar */
@@ -33,12 +30,13 @@ aside {
   color: black;
   background-color: white;
   margin-bottom: 22px;
-  padding: 10px 45px;
+  padding: 10px 25px;
   border: none;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 400;
   border: 0.5px solid white;
+  text-align: left;
 }
 .navbar button:hover {
   cursor: pointer;
@@ -80,13 +78,16 @@ aside {
 }
 /* end sidebar */
 
+.global {
+  margin-left: 255px;
+}
 /* start nav */
 .nav {
   display: flex;
   background-color: #405262;
   align-items: center;
   justify-content: end;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   border: none;
 }
