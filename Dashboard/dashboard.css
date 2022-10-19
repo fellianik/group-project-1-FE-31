@@ -10,6 +10,7 @@
 aside {
   background-color: #405262;
   width: 255px;
+  height: 100vh;
   position: fixed;
 }
 .container {
