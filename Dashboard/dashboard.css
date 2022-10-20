@@ -26,8 +26,12 @@ aside {
   justify-content: center;
   display: grid;
 }
+.navbar a {
+  text-decoration: none;
+}
 .navbar button {
   display: block;
+  width: 170px;
   color: black;
   background-color: white;
   margin-bottom: 22px;
