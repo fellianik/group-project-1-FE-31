@@ -54,15 +54,6 @@ table {
     background-color: rgba(0, 242, 254, 0.1);
 }
 
-@media (max-width: 576px) {
-    .sidebar {
-        background-color: #1e83b2;
-        height: 30px;
-        position: relative;
-        width: 100%;
-    }
-}
-
 /* Kharis */
 /* aside {
     background-color: #405262;
@@ -159,4 +150,41 @@ nav {
 }
 .profil:hover {
     cursor: pointer;
+}
+
+/* Responsive tambahan */
+@media (max-width: 576px) {
+    .col-sm-3 {
+        /* width: 100%;
+        background-color: #405262;
+        border-bottom: 1px solid white;
+        margin: 0; */
+        display: none;
+    }
+    .col-sm-9 {
+        width: 100%;
+    }
+    /* .sidebar {
+        background-color: #1e83b2;
+        height: fit-content;
+        position: relative;
+        width: 100%;
+    } */
+    /* .navbar-side {
+        display: grid;
+        justify-content: normal;
+        vertical-align: middle;
+    } */
+    /* .logo {
+        display: none;
+    } */
+    /* .navbar-side button {
+        margin-bottom: 5px;
+        padding: 0;
+        font-size: 10px;
+        text-align: center;
+    } */
+    /* .home {
+        display: none;
+    } */
 }
