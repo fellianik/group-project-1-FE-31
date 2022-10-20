@@ -1,0 +1,55 @@
+* {
+    font-family: Poppins, sans-serif;
+}
+
+.tambah {
+    background-color: #1e83b2;
+    height: 500px;
+    position: fixed;
+    width: 25%;
+}
+
+.nav {
+    background-color: antiquewhite;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.container-sm {
+    align-self: flex-end;
+}
+
+#inputSearch {
+    font-size: small;
+}
+
+#inputSearch:hover {
+    border: 1px solid rgba(43, 147, 239, 1);
+}
+
+.btn {
+    background-color: #25a4de;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #1e83b2;
+    color: white;
+}
+
+.row {
+    margin-top: 1.5rem;
+}
+
+table {
+    background-color: rgba(0, 242, 254, 0.1);
+}
+
+@media (max-width: 576px) {
+    .tambah {
+        background-color: #1e83b2;
+        height: 30px;
+        position: relative;
+        width: 100%;
+    }
+}
