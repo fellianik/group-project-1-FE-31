@@ -121,6 +121,22 @@ section {
     margin-left: 40px;
     width: 920px;
 }
+.Identitas {
+    padding: 40px;    
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.isi-id {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.isi-id h5{
+    font-weight: 600;
+}
 
 .riwayat {
     padding: 40px;
