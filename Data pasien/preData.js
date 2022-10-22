@@ -15,6 +15,7 @@ let getDataPasien = async () => {
   let allDataDokter = await resp.json();
   // console.log(allDataDokter);
 
+  console.log(allDataPasien);
   for (let i = 0; i < allDataPasien.length; i++) {
     for (let j = 0; j < allDataDokter.length; j++) {
       // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN
@@ -31,7 +32,7 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].tanggalLahir}</td>
                 <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
-                <a class="btn btn-sm" href="#" role="button">
+                <a class="btn btn-sm" href="../Data pasien/data.html" role="button">
                 <i class="material-icons" style="font-size: 15px">zoom_in</i>
                 Lihat
                 </a>

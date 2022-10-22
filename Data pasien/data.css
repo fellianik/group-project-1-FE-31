@@ -121,7 +121,36 @@ section {
   margin-left: 40px;
   width: 920px;
 }
-
+/* start css danar */
+.Identitas {
+  padding: 40px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+.isi-id {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.isi-id h5 {
+  font-weight: 600;
+}
+/* end css danar */
+.riwayat {
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+.head-isi {
+  margin-left: 5px;
+}
+.akord-riwayat {
+  margin-top: 25px;
+}
+/* end riwayat */
 .riwayat {
   padding: 40px;
   border-radius: 5px;
