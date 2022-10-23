@@ -18,9 +18,6 @@
 }
 
 .nav {
-    background-color: antiquewhite;
-    width: 100%;
-    align-self: flex-start;
     padding: 0;
 }
 
@@ -63,21 +60,7 @@ h1#notif.hidden-notif {
 }
 
 /* Kharis */
-/* aside {
-    background-color: #405262;
-    width: 255px;
-    height: 100vh;
-    position: fixed;
-} */
-/* .container {
-    width: 255px;
-    border: none;
-  } */
-/* .logo {
-    display: grid;
-    justify-content: center;
-    margin: 60px 0px;
-} */
+
 .navbar-side {
     justify-content: center;
     display: grid;
@@ -136,7 +119,7 @@ h1#notif.hidden-notif {
 /* end sidebar */
 nav {
     display: flex;
-    background-color: #405262;
+    /* background-color: #405262; */
     align-items: center;
     justify-content: end;
     width: 100%;
@@ -150,7 +133,7 @@ nav {
     margin-right: 20px;
 }
 .profil h5 {
-    color: white;
+    color: black;
 }
 .profil img {
     margin-left: 15px;

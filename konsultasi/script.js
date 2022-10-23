@@ -20,11 +20,10 @@ let getDataPasien = async () => {
     // ===============================NAMA DOKTER===================================
     namaDokter.innerText = "Danar Riko";
 
-    // ===============================DATA TABLE===================================
     for (let i = 0; i < allDataPasien.length; i++) {
         for (let j = 0; j < allDataDokter.length; j++) {
             // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN
-            let pasienDokter = allDataDokter[j].idDokter == allDataPasien[i].idDokter;
+            let pasienDokter = allDataDokter[j].idDokter == allDataPasien[i].idDokter && allDataPasien[i].konsultasi == true;
             if (pasienDokter) {
                 dataStore.push(allDataPasien[i]);
                 tableBody.innerHTML += `
@@ -35,12 +34,11 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].jenisKelamin}</td>
                 <td scope="col">${allDataPasien[i].umur}</td>
                 <td scope="col">${allDataPasien[i].tanggalLahir}</td>
-                <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
                     <form action="#">
                         <a id="submit${i}" class="btn btn-sm" href="#" role="button">
-                        <i class="material-icons" style="font-size: 15px">zoom_in</i>
-                        Lihat
+                        <i class="material-icons" style="font-size: 15px">edit</i>
+                        Edit
                         </a>
                     </form>
                 </td>
@@ -52,7 +50,7 @@ let getDataPasien = async () => {
     }
     // console.log(tableBody);
 
-    // ===========================BAGIAN LOCAL STORAGE====================================
+    // ===========================Bagian LOCAL STORAGE====================================
     for (let i = 0; i < allDataPasien.length - 2; i++) {
         let angka = i + 1;
         let btn = document.getElementById("submit" + i);
@@ -85,7 +83,6 @@ let getDataPasien = async () => {
                 <td scope="col">${filteredData[i].jenisKelamin}</td>
                 <td scope="col">${filteredData[i].umur}</td>
                 <td scope="col">${filteredData[i].tanggalLahir}</td>
-                <td scope="col">${filteredData[i].alamat}</td>
                 <td scope="col">
                 <a class="btn btn-sm" href="#" role="button">
                 <i class="material-icons" style="font-size: 15px">zoom_in</i>
