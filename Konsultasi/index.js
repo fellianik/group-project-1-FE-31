@@ -63,3 +63,65 @@ async function data() {
 }
 
 data();
+
+// async function dataForm() {
+//   let form = await fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes);
+//   let hasilForm = await form.json();
+//   console.log(hasilForm);
+// }
+// dataForm();
+let btn = document.getElementById("submitRiwayat");
+let hasilForm = {};
+fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes)
+  .then((res) => res.json())
+  .then((data) => {
+    hasilForm = data;
+    console.log(hasilForm);
+  });
+
+const edit = async (body) => {
+  let field1 = document.getElementById("isiTanggal");
+  let field2 = document.getElementById("isiAnamnesis");
+  let field3 = document.getElementById("isiDiagnosis");
+  let field4 = document.getElementById("isiObat");
+  let field5 = document.getElementById("isiCatatan");
+
+  let inputForm = {
+    tanggalBerobat: field1.value,
+    anamnesis: field2.value,
+    diagnosis: field3.value,
+    obat: field4.value,
+    catatan: field5.value,
+  };
+  hasilForm.riwayatPenyakit.push(inputForm);
+  hasilForm.konsultasi = true;
+  let ambil = await fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes, {
+    method: "put",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+  console.log(ambil);
+  let ambilData = await ambil.json();
+  console.log(ambilData);
+};
+
+btn.addEventListener("click", (event) => {
+  let area = document.getElementById("tArea");
+  event.preventDefault();
+  edit(hasilForm);
+  area.reset();
+});
+
+// btn.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes, {
+//     method: "put",
+//     headers: {
+//       "Content-type": "application/json",
+//     },
+//     body: JSON.stringify(),
+//   });
+//   area.reset();
+// });
