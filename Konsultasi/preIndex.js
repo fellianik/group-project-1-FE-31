@@ -30,11 +30,10 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].jenisKelamin}</td>
                 <td scope="col">${allDataPasien[i].umur}</td>
                 <td scope="col">${allDataPasien[i].tanggalLahir}</td>
-                <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
                 <form action="data.html">
-                <a id="submit${i}" class="btn btn-sm" href="../Data pasien/data.html" role="button">
-                <i class="material-icons" style="font-size: 15px">zoom_in</i>
+                <a id="submit${i}" class="btn btn-sm" href="../Konsultasi/index.html" role="button">
+                <i class="material-icons" style="font-size: 15px">edit</i>
                 Lihat
                 </a>
                 </form>
@@ -78,11 +77,9 @@ let getDataPasien = async () => {
                 <td scope="col">${filteredData[i].jenisKelamin}</td>
                 <td scope="col">${filteredData[i].umur}</td>
                 <td scope="col">${filteredData[i].tanggalLahir}</td>
-                <td scope="col">${filteredData[i].alamat}</td>
-                <td scope="col">
                 <a class="btn btn-sm" href="#" role="button">
-                <i class="material-icons" style="font-size: 15px">zoom_in</i>
-                Lihat
+                <i class="material-icons" style="font-size: 15px">edit</i>
+                Edit
                 </a>
                 </td>
                     </tr>
