@@ -23,7 +23,7 @@ let getDataPasien = async () => {
     for (let i = 0; i < allDataPasien.length; i++) {
         for (let j = 0; j < allDataDokter.length; j++) {
             // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN
-            let pasienDokter = allDataDokter[j].idDokter == allDataPasien[i].idDokter && allDataPasien[i].konsultasi == true;
+            let pasienDokter = allDataDokter[j].idDokter == allDataPasien[i].idDokter && allDataPasien[i].konsultasi == false;
             if (pasienDokter) {
                 dataStore.push(allDataPasien[i]);
                 tableBody.innerHTML += `
@@ -36,10 +36,10 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].tanggalLahir}</td>
                 <td scope="col">
                     <form action="#">
-                        <a id="submit${i}" class="btn btn-sm" href="#" role="button">
+                        <button id="submit${i}" class="btn btn-sm" href="#" role="button">
                         <i class="material-icons" style="font-size: 15px">edit</i>
                         Edit
-                        </a>
+                        </button>
                     </form>
                 </td>
                 </tr>

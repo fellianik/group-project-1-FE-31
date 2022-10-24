@@ -17,14 +17,16 @@ let getDataPasien = async () => {
     let allDataDokter = await resp.json();
     // console.log(allDataDokter);
 
-    // ===============================NAMA DOKTER===================================
-    namaDokter.innerText = "Danar Riko";
-
-    // ===============================DATA TABLE===================================
     for (let i = 0; i < allDataPasien.length; i++) {
         for (let j = 0; j < allDataDokter.length; j++) {
+            // ===============================NAMA DOKTER===================================
+            namaDokter.innerText = "Danar Riko";
+
             // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN
+
             let pasienDokter = allDataDokter[j].idDokter == allDataPasien[i].idDokter;
+
+            // ===============================DATA TABLE===================================
             if (pasienDokter) {
                 dataStore.push(allDataPasien[i]);
                 tableBody.innerHTML += `
@@ -38,10 +40,10 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
                     <form action="#">
-                        <a id="submit${i}" class="btn btn-sm" href="#" role="button">
+                        <button id="submit${i}" class="btn btn-sm" href="#" role="button">
                         <i class="material-icons" style="font-size: 15px">zoom_in</i>
                         Lihat
-                        </a>
+                        </button>
                     </form>
                 </td>
                 </tr>
