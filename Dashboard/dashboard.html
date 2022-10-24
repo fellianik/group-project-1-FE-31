@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/01d4a17efa.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- side bar start -->
+    <aside>
+      <div class="container">
+        <div class="logo">
+          <img src="../Img/Medtech_sm.png" alt="Logo MedTech" width="150px" />
+        </div>
+        <div class="navbar-side">
+          <a href="../Data pasien/preData.html">
+            <button><i class="fas fa-book" style="font-size: 18px"></i> Data Pasien</button>
+          </a>
+          <a href="../Konsultasi/preIndex.html">
+            <button><i class="fas fa-stethoscope" style="font-size: 18px"></i> Konsultasi</button>
+          </a>
+          <a href="">
+            <button><i class="fas fa-sign-out-alt" style="font-size: 18px"></i> Keluar</button>
+          </a>
+        </div>
+        <div class="home">
+          <a href="../Dashboard/dashboard.html">
+            <span class="fas fa-house-user" style="font-size: 60px"></span>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- end sidebar -->
+    <!-- start kanan -->
+    <div class="global">
+      <!-- navbar start -->
+      <nav class="nav">
+        <div class="profil">
+          <h5>Danar Riko</h5>
+
+          <img src="../Img/person.png" alt="" width="40px" />
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+      <!-- start informasi -->
+      <section class="info">
+        <div class="general">
+          <div class="card-container">
+            <div class="card-1">
+              <div class="inner-card-1">
+                <div class="counter">
+                  <h1 id="jumlahPasien"></h1>
+                </div>
+                <div class="teks">
+                  <h2>Jumlah Pasien</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-2">
+              <div class="inner-card-1">
+                <div class="counter">
+                  <h1>18</h1>
+                </div>
+                <div class="teks">
+                  <h2>Pasien Terlayani</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="../Img/waiting room.jpg" alt="" width="520px" />
+          </div>
+        </div>
+      </section>
+      <!-- end informasi -->
+    </div>
+    <!-- end kanan -->
+    <script src="dashboard.js"></script>
+  </body>
+</html>
