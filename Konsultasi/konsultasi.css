@@ -5,7 +5,53 @@
 }
 
 /* start sidebar */
+.col-sm-3 {
+    width: 21%;
+}
 
+.col-sm-9 {
+    width: 79%;
+}
+
+.container-sm {
+    align-self: flex-end;
+}
+
+#inputSearch {
+    font-size: small;
+}
+
+#inputSearch:hover {
+    border: 1px solid rgba(43, 147, 239, 1);
+}
+
+#icon-search {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #25a4de;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #1e83b2;
+    color: white;
+}
+
+.row {
+    margin-top: 1.5rem;
+}
+
+table {
+    background-color: rgba(0, 242, 254, 0.1);
+}
+
+h1#notif.hidden-notif {
+    display: none;
+}
+
+/* start sidebar kharis */
 aside {
     position: fixed;
     display: block;
@@ -114,31 +160,13 @@ aside {
 .global {
     margin-left: 255px;
 }
+
 /* start riwayat */
 section {
     margin-top: 30px;
     margin-left: 40px;
     width: 920px;
 }
-
-/* start css danar */
-.Identitas {
-    padding: 40px;
-    margin-top: 10px;
-    margin-bottom: 35px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
-}
-.isi-id {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-.isi-id h5 {
-    font-weight: 600;
-}
-/* end css danar */
 .riwayat {
     padding: 40px;
     border-radius: 5px;
@@ -149,10 +177,6 @@ section {
 }
 .akord-riwayat {
     margin-top: 25px;
-}
-.accordion-body {
-    display: grid;
-    grid-template-columns: auto auto;
 }
 /* end riwayat */
 
@@ -169,16 +193,9 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-}
-.date input {
-    background-color: white;
-    border: 0.1px solid black;
-    border-radius: 6px;
-    box-shadow: 0.5px 0.5px 1px black;
 }
 .form-rekam form {
     margin-top: 24px;
@@ -195,7 +212,7 @@ section {
 .field textarea {
     border: 0.1px solid black;
     border-radius: 10px;
-    box-shadow: 0.5px 0.5px 2px black;
+    box-shadow: 0.5px 0.5px 7px black;
     padding: 5px;
     resize: none;
 }
