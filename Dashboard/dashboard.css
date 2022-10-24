@@ -3,15 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* parent layout */
-/* layout */
 
 /* start sidebar */
 aside {
   background-color: #405262;
+  position: fixed;
   width: 255px;
   height: 100vh;
-  position: fixed;
 }
 .container {
   width: 255px;
@@ -169,6 +167,5 @@ aside {
   border-radius: 20px;
   box-shadow: 1px 1px 5px black;
 }
-/* box-shadow: 1px 1px 5px black; */
 
 /* end informasi */

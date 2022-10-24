@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* parent layout */
-
-/* layout */
 
 /* start sidebar */
 
@@ -14,6 +11,7 @@ aside {
   display: block;
   background-color: #405262;
   width: 255px;
+  height: 100vh;
 }
 .container {
   width: 255px;

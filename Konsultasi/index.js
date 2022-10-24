@@ -125,12 +125,6 @@ async function data() {
 
 data();
 
-// async function dataForm() {
-//   let form = await fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes);
-//   let hasilForm = await form.json();
-//   console.log(hasilForm);
-// }
-// dataForm();
 let btn = document.getElementById("submitRiwayat");
 let hasilForm = {};
 fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes)
@@ -174,15 +168,3 @@ btn.addEventListener("click", (event) => {
   edit(hasilForm);
   area.reset();
 });
-
-// btn.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes, {
-//     method: "put",
-//     headers: {
-//       "Content-type": "application/json",
-//     },
-//     body: JSON.stringify(),
-//   });
-//   area.reset();
-// });
