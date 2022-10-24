@@ -1,24 +1,16 @@
 * {
-    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+/* start sidebar */
 .col-sm-3 {
     width: 21%;
 }
 
-.sidebar {
-    background-color: #405262;
-    height: 100vh;
-    position: fixed;
-    width: 21vw;
-}
-
 .col-sm-9 {
     width: 79%;
-}
-
-.nav {
-    padding: 0;
 }
 
 .container-sm {
@@ -59,19 +51,33 @@ h1#notif.hidden-notif {
     display: none;
 }
 
-/* Kharis */
-
-.navbar-side {
+/* start sidebar kharis */
+aside {
+    position: fixed;
+    display: block;
+    background-color: #405262;
+    width: 255px;
+    height: 100vh;
+}
+.container {
+    width: 255px;
+    border: none;
+}
+.logo {
+    display: grid;
+    justify-content: center;
+    padding: 60px 0px;
+}
+.navbar {
     justify-content: center;
     display: grid;
 }
-.navbar-side a {
-    display: inline-block;
+.navbar a {
     text-decoration: none;
-    color: inherit;
 }
-.navbar-side button {
+.navbar button {
     display: block;
+    width: 170px;
     color: black;
     background-color: white;
     margin-bottom: 22px;
@@ -83,7 +89,7 @@ h1#notif.hidden-notif {
     border: 0.5px solid white;
     text-align: left;
 }
-.navbar-side button:hover {
+.navbar button:hover {
     cursor: pointer;
     background-color: #00f2fe;
     color: black;
@@ -122,9 +128,11 @@ h1#notif.hidden-notif {
     transition-property: color, background-color;
 }
 /* end sidebar */
-nav {
+
+/* start nav */
+.nav {
     display: flex;
-    /* background-color: #405262; */
+    background-color: white;
     align-items: center;
     justify-content: end;
     width: 100%;
@@ -147,13 +155,91 @@ nav {
 .profil:hover {
     cursor: pointer;
 }
+/* end nav */
 
-/* Responsive tambahan */
-@media (max-width: 576px) {
-    .col-sm-3 {
-        display: none;
-    }
-    .col-sm-9 {
-        width: 100%;
-    }
+.global {
+    margin-left: 255px;
 }
+
+/* start riwayat */
+section {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 920px;
+}
+.riwayat {
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.head-isi {
+    margin-left: 5px;
+}
+.akord-riwayat {
+    margin-top: 25px;
+}
+/* end riwayat */
+
+/* start isi rekam medis */
+.date label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.rekam {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-rekam form {
+    margin-top: 24px;
+}
+.field {
+    margin-bottom: 12px;
+}
+.field label {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.field textarea {
+    border: 0.1px solid black;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 7px black;
+    padding: 5px;
+    resize: none;
+}
+.button-rekam {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+.button-rekam button {
+    padding: 5px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #66ba41;
+    color: black;
+}
+.button-rekam button:hover {
+    color: white;
+    background-color: #4c7d37;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(3px) translateZ(1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+/* end isi rekam medis */
