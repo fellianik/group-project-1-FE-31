@@ -34,8 +34,8 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].tanggalLahir}</td>
                 <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
-                <form action="data.html">
-                <button id="submit${i}" onclick="kondisi(${i + 1})" class="btn btn-sm" href="../Data pasien/data.html" role="button">
+                <form action="../Data Pasien/data.html">
+                <button id="submit${i}" onclick="kondisi(${i + 1})" class="btn btn-sm" role="button">
                 <i class="material-icons" style="font-size: 15px">zoom_in</i>
                 Lihat
                 </button>

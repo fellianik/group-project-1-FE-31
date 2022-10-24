@@ -23,7 +23,7 @@ let getDataLogin = async () => {
         }
 
         if (isLogin === true) {
-            window.location = "../data-pasien/index.html";
+            window.location = "../Dashboard/dashboard.html";
         } else {
             alert("Masukkan username atau password yang benar");
         }
