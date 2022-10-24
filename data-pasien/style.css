@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* start sidebar */
+.col-sm-3 {
+    width: 21%;
+}
+.col-sm-9 {
+    width: 79%;
+}
+
+.container-sm {
+    align-self: flex-end;
+}
+
+#inputSearch {
+    font-size: small;
+}
+
+#inputSearch:hover {
+    border: 1px solid rgba(43, 147, 239, 1);
+}
+
+.btn {
+    background-color: #25a4de;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #1e83b2;
+    color: white;
+}
+
+.row {
+    margin-top: 1.5rem;
+}
+
+table {
+    background-color: rgba(0, 242, 254, 0.1);
+}
+/* end css feli */
+aside {
+    position: fixed;
+    display: block;
+    background-color: #405262;
+    width: 255px;
+    height: 100vh;
+}
+.container {
+    width: 255px;
+    border: none;
+}
+.logo {
+    display: grid;
+    justify-content: center;
+    padding: 60px 0px;
+}
+.navbar {
+    justify-content: center;
+    display: grid;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar button {
+    display: block;
+    width: 170px;
+    color: black;
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0.5px solid white;
+    text-align: left;
+}
+.navbar button:hover {
+    cursor: pointer;
+    background-color: #00f2fe;
+    color: black;
+    border: 0.5px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.home {
+    display: grid;
+    justify-content: center;
+    padding: 71px 0px;
+}
+.home a {
+    color: black;
+}
+.home a:hover {
+    color: white;
+    text-shadow: 1px 1px 7px black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(3px) translateZ(1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+/* end sidebar */
+
+/* start nav */
+.nav {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100px;
+    border: none;
+}
+.profil {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+.profil h5 {
+    color: black;
+}
+.profil img {
+    margin-left: 15px;
+    border-radius: 40px;
+}
+.profil:hover {
+    cursor: pointer;
+}
+/* end nav */
+
+.global {
+    margin-left: 255px;
+}
+/* start riwayat */
+section {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 920px;
+}
+
+.riwayat {
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.head-isi {
+    margin-left: 5px;
+}
+.akord-riwayat {
+    margin-top: 25px;
+}
+/* end riwayat */
+
+/* start isi rekam medis */
+.rekam {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-rekam form {
+    margin-top: 24px;
+}
+.field {
+    margin-bottom: 12px;
+}
+.field label {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.field textarea {
+    border: 0.1px solid black;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 7px black;
+    padding: 5px;
+}
+.button-rekam {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+.button-rekam button {
+    padding: 5px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #66ba41;
+    color: black;
+}
+.button-rekam button:hover {
+    color: white;
+    background-color: #4c7d37;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(3px) translateZ(1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+/* end isi rekam medis */
