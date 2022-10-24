@@ -19,7 +19,7 @@ let getDataPasien = async () => {
   let allDataDokter = await resp.json();
   // console.log(allDataDokter);
   // style="display: none;"
-  console.log(allDataPasien);
+
   for (let i = 0; i < allDataPasien.length; i++) {
     for (let j = 0; j < allDataDokter.length; j++) {
       // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN

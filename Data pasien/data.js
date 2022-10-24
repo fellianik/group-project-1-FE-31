@@ -1,13 +1,10 @@
 let tes = localStorage.getItem("id");
-console.log(tes);
 let akord = document.getElementById("accordionExample");
 async function data() {
   let api = await fetch("https://6350e03cdfe45bbd55b074ed.mockapi.io/medTechAPI/pasien/" + tes);
   let hasilApi = await api.json();
-  console.log(hasilApi);
   let finalApi = await hasilApi;
   let identitas = document.getElementById("identitas");
-  console.log(finalApi.riwayatPenyakit.length);
 
   identitas.innerHTML = `
 <div class="head-isi">

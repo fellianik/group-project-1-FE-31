@@ -5,7 +5,6 @@ let tableBody = document.getElementsByClassName("table-body")[0];
 let inputSearch = document.getElementById("inputSearch");
 
 let dataStore = [];
-
 function kondisi(angka) {
   localStorage.setItem("id", "" + angka);
 }
@@ -18,7 +17,6 @@ let getDataPasien = async () => {
   let allDataDokter = await resp.json();
   // console.log(allDataDokter);
 
-  console.log(allDataPasien);
   for (let i = 0; i < allDataPasien.length; i++) {
     for (let j = 0; j < allDataDokter.length; j++) {
       // PERLU PENYESUAIAN LAGI DENGAN USER SIAPA YANG LAGI LOGIN
@@ -48,19 +46,7 @@ let getDataPasien = async () => {
       // PERLU PENYESUAIAN DI HREF BUTTON ACTION
     }
   }
-  // console.log(tableBody);
-  // console.log(dataStore.length);
-  // for (let i = 0; i < dataStore.length; i++) {
-  //   let angka = i + 1;
-  //   let btn = document.getElementById("submit" + i);
-  //   console.log(btn);
-  //   console.log(angka);
-  //   btn.addEventListener("click", (event) => {
-  //     // event.preventDefault();
-  //     localStorage.setItem("id", "" + angka);
-  //   });
-  //   let local = localStorage.getItem("id");
-  // }
+
   // ===========================FITUR SEARCH============================================
   inputSearch.addEventListener("input", (event) => {
     let currentWord = event.target.value;
