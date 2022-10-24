@@ -6,6 +6,10 @@ let inputSearch = document.getElementById("inputSearch");
 
 let dataStore = [];
 
+function kondisi(angka) {
+  localStorage.setItem("id", "" + angka);
+}
+
 let getDataPasien = async () => {
   let response = await fetch(dataPasienAPI);
   let allDataPasien = await response.json();
@@ -14,7 +18,7 @@ let getDataPasien = async () => {
   let resp = await fetch(dataDokterAPI);
   let allDataDokter = await resp.json();
   // console.log(allDataDokter);
-
+  // style="display: none;"
   console.log(allDataPasien);
   for (let i = 0; i < allDataPasien.length; i++) {
     for (let j = 0; j < allDataDokter.length; j++) {
@@ -23,7 +27,7 @@ let getDataPasien = async () => {
       if (pasienDokter) {
         dataStore.push(allDataPasien[i]);
         tableBody.innerHTML += `
-                <tr>
+                <tr id="row" >
                 <td scope="col">${i + 1}</td>
                 <td scope="col">${allDataPasien[i].idPasien}</td>
                 <td scope="col">${allDataPasien[i].namaLengkap}</td>
@@ -33,10 +37,10 @@ let getDataPasien = async () => {
                 <td scope="col">${allDataPasien[i].alamat}</td>
                 <td scope="col">
                 <form action="data.html">
-                <a id="submit${i}" class="btn btn-sm" href="../Data pasien/data.html" role="button">
+                <button id="submit${i}" onclick="kondisi(${i + 1})" class="btn btn-sm" href="../Data pasien/data.html" role="button">
                 <i class="material-icons" style="font-size: 15px">zoom_in</i>
                 Lihat
-                </a>
+                </button>
                 </form>
                 </td>
                 </tr>
@@ -46,18 +50,7 @@ let getDataPasien = async () => {
       // PERLU PENYESUAIAN DI HREF BUTTON ACTION
     }
   }
-  // console.log(tableBody);
-  for (let i = 0; i < allDataPasien.length - 2; i++) {
-    let angka = i + 1;
-    let btn = document.getElementById("submit" + i);
-    console.log(btn);
-    console.log(angka);
-    btn.addEventListener("click", (event) => {
-      // event.preventDefault();
-      localStorage.setItem("id", "" + angka);
-    });
-    let local = localStorage.getItem("id");
-  }
+
   // ===========================FITUR SEARCH============================================
   inputSearch.addEventListener("input", (event) => {
     let currentWord = event.target.value;

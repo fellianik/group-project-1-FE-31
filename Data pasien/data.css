@@ -162,6 +162,10 @@ section {
 .akord-riwayat {
   margin-top: 25px;
 }
+.accordion-body {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 /* end riwayat */
 
 /* start isi rekam medis */
